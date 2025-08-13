@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ThatJamGuy</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <h1>WELCOME</h1>
+            <p>Welcome my personal little website, made from scratch with HTML and CSS as a place to showcase myself or something like that.</p>
+
+            <div class="image-container">
+                <img src="vectorarts.png" alt="Vector Arts Entertainment Logo" />
+            </div>
+
+            <h1>WHO AM I?</h1>
+            <p>
+                I am ThatJamGuy. I am a hobbyist with various skills involving Game Development, Digital Music Production, general programming, and running a YouTube channel. <br>
+                In terms of Game Development, a lot of my larger projects (Most just SCP - Containment Breach Revival right now) are open source, so contributions are always welcome. <br>
+                I have created myself a studio called "VectorArts Entertainment", which is the primary thing you will see credited on my games from this point forward, but know that it's mostly just me.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        fetch('header.html')
+            .then(r => r.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+                document.querySelector(`.nav a[href="${window.location.pathname.split('/').pop() || 'index.html'}"]`)?.classList.add('active');
+            });
+    </script>
+</body>
+</html>
