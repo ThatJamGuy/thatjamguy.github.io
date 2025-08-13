@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ThatJamGuy - Music</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <h1>MUSIC</h1>
+            <p>I make music and stuff.</p>
+        </div>
+    </main>
+
+    <script>
+        fetch('header.html')
+            .then(r => r.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+                document.querySelector(`.nav a[href="${window.location.pathname.split('/').pop() || 'index.html'}"]`)?.classList.add('active');
+            });
+    </script>
+</body>
+</html>
