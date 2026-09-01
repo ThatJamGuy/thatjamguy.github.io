@@ -1,110 +1,90 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Browse Games</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <style>
-            body {background-color:#131313;}
+<head>
+    <title>Browse Games</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        a:link {
+            color: #ff0000;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
-            a:link {
-                color:#ff0000;
-                background-color: transparent;
-                text-decoration: none;
+        A:visited {
+            color: #0061ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
-            }
+        a:hover {
+            color: purple;
+            background-color: transparent;
+            text-decoration: underline;
+        }
 
-            A:visited {
-                color:#0061ff;
-                background-color: transparent;
-                text-decoration: none;
-            }
+        h1 {
+            text-align: center;
+        }
 
-            a:hover {
-                color: purple;
-                background-color: transparent;
-                text-decoration: underline;
-            }
+        .p1 {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
 
-            .h1 {
-                color: white;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-                font-size: 50px;
-            }
+        Image {
+            border: solid black;
+            padding: 10px;
+        }
 
-            .p1 {
-                color: white;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 18px;
-            }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-            Image {
-                border: solid black;
-                padding: 10px;
-            }
+        .gallery-item {
+            margin: 5px;
+            border: 1px solid gray;
+            display: inline-block;
+            overflow: hidden;
+            max-width: 502px;
+            max-height: 394px;
+        }
 
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                max-width:fit-content;
-                margin-left:auto;
-                margin-right:auto;
-            }
-
-            .gallery-item {
-                margin: 5px;
-                border: 1px solid gray;
-                display: inline-block;
-                overflow: hidden;
-                max-width: 502px;
-                max-height: 394px;
-            }
-
-            .gallery-item-image {
-                -webkit-transition-duration: 0.2s;
-            }
+        .gallery-item-image {
+            -webkit-transition-duration: 0.2s;
+        }
 
             .gallery-item-image:hover {
-                transform:scale(1.1);
+                transform: scale(1.1);
             }
 
-            .gallery-item-text {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                color: white;
-                padding: 1px;
-                text-align:center;
-            }
+        .gallery-item-text {
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
 
-            .footer {
-
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: #1c1c1c;
-             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-align: center;
-                color: gray;
-                z-index: 1000;
-            }
-
-            .button {
-                color: #ff0000;
-                background-color: black;
-                text-align: left;
-                font-size: 20px;
-                padding: 2px;
-            }
+        .button {
+            color: #ff0000;
+            background-color: black;
+            text-align: left;
+            font-size: 20px;
+            padding: 2px;
+        }
 
 
-            .divspacer {
-                height: 100px;
-            }
-        </style>
-    </head>
+        .divspacer {
+            height: 100px;
+        }
+    </style>
+</head>
 
     <body>
         <button class="button"><a href="index.html">Home</a> </button>
