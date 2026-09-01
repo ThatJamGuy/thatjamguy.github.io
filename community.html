@@ -1,136 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Community</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <style>
-            body {background-color:#131313;}
+<head>
+    <title>Community</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        a:link {
+            color: #ff0000;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
+        A:visited {
+            color: #0061ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
+        a:hover {
+            color: purple;
+            background-color: transparent;
+            text-decoration: underline;
+        }
 
-            a:link {
-                color:#ff0000;
-                background-color: transparent;
-                text-decoration: none;
-            }
+        .p1 {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
 
-            A:visited {
-                color:#0061ff;
-                background-color: transparent;
-                text-decoration: none;
-            }
+        Image {
+            border: solid black;
+            padding: 10px;
+        }
 
-            a:hover {
-                color: purple;
-                background-color: transparent;
-                text-decoration: underline;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-            }
+        .gallery-item {
+            margin: 5px;
+            border: 1px solid gray;
+            display: inline-block;
+            overflow: hidden;
+            max-width: 502px;
+            max-height: 394px;
+        }
 
-            .h1 {
-                color: white;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-                font-size: 50px;
-            }
-
-            .p1 {
-                color: white;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 18px;
-            }
-
-            Image {
-                border: solid black;
-                padding: 10px;
-            }
-
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                max-width:fit-content;
-                margin-left:auto;
-                margin-right:auto;
-            }
-
-            .gallery-item {
-                margin: 5px;
-                border: 1px solid gray;
-                display: inline-block;
-                overflow: hidden;
-                max-width: 502px;
-                max-height: 394px;
-            }
-
-            .gallery-item-image {
-                -webkit-transition-duration: 0.2s;
-            }
+        .gallery-item-image {
+            -webkit-transition-duration: 0.2s;
+        }
 
             .gallery-item-image:hover {
-                transform:scale(1.1);
+                transform: scale(1.1);
             }
 
-            .gallery-item-text {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                color: white;
-                padding: 1px;
-                text-align:center;
-            }
+        .gallery-item-text {
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
 
-            .footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: #1c1c1c;
-             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-align: center;
-                color: gray;
-                z-index: 1000;
-            }
+        .button {
+            color: #ff0000;
+            background-color: black;
+            text-align: left;
+            font-size: 20px;
+            padding: 2px;
+        }
 
-            .button {
-                color: #ff0000;
-                background-color: black;
-                text-align: left;
-                font-size: 20px;
-                padding: 2px;
-            }
-            .button2 {
+        .button2 {
+            color: #ff0000;
+            background-color: black;
+            text-align: left;
+            font-size: 20px;
+            padding: 2px;
+        }
 
-                color: #ff0000;
-                background-color: black;
-                text-align: left;
-                font-size: 20px;
-                padding: 2px;
-            }
+        .divspacer {
+            height: 100px;
+        }
 
-            .divspacer {
-                height: 100px;
-            }
-            
-            .divspacer2 {
-                height: 0.2px;
-            }
+        .divspacer2 {
+            height: 0.2px;
+        }
 
-            .divspacer3 {
-                block-size: 200px;
-            }
+        .divspacer3 {
+            block-size: 200px;
+        }
 
-            .banner { 
-                padding-left: 210px;
-            }
+        .banner {
+            padding-left: 210px;
+        }
+    </style>
+</head>
+    <body>
+        <h1 class="h1">Community Made art</h1>
+        <p class="p1">
+            This is where you can find all videos/images made by our community
+        </p>
 
-        </style>
-        <head>
-            <body>
-
-                <h1 class="h1">Community Made art</h1>
-                <p class="p1">This is where you can find all videos/images made by our community</p>
-
-                <iframe width="540" height="360" src="https://www.youtube.com/embed/NR9bsYe1Aiw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" title="Media Embed" style="border: 0px; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;" data-darkreader-inline-border-top data-darkreader-inline-border-right data-darkreader-inline-border-bottom data-darkreader-inline-border-left><small>Powered by <a href="https://embed.tube/embed-code-generator/youtube/">youtube embed</a></small></iframe>
-
-            </body>
-        </head>
+        <iframe width="1905" height="782" src="https://www.youtube.com/embed/NR9bsYe1Aiw" title="THIS BUILDING IS IN LOCKDOWN AND IT’S JUST ME AND THE ENTITIES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+</html>
