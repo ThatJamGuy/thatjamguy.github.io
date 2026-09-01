@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>VectorArts Entertainment</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
-        <style>
-            body {
-                background-color: #131313;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            h1 { 
-                font-size: 50px;
-            }
+<head>
+    <title>VectorArts Entertainment</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #131313;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-            .header {
-                text-align: center;
-                color: white;
-            }
+        h1 {
+            font-size: 50px;
+        }
 
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                max-width: fit-content;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        .header {
+            text-align: center;
+            color: white;
+        }
 
-            .gallery-item {
-                margin: 5px;
-                border: 1px solid gray;
-                display: inline-block;
-                overflow: hidden;
-                max-width: 502px;
-                max-height: 394px;
-            }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-            .gallery-item-image {
-                -webkit-transition-duration: 0.2s;
-            }
+        .gallery-item {
+            margin: 5px;
+            border: 1px solid gray;
+            display: inline-block;
+            overflow: hidden;
+            max-width: 502px;
+            max-height: 394px;
+        }
 
-            .gallery-item-image:hover {
-                transform:scale(1.1);
-            }
+        .gallery-item-image {
+            -webkit-transition-duration: 0.2s;
+        }
 
-            .gallery-item-text {
-                color: white;
-                padding: 1px;
-                text-align:center;
-            }
+        .gallery-item-image:hover {
+            transform: scale(1.1);
+        }
 
-            .footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: #1c1c1c;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-align: center;
-                color: gray;
-                z-index: 1000;
-            }
+        .gallery-item-text {
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
 
-        </style>
-    </head>
+        .footer {
+            align-items: center;
+            background-color: rgb(10 10 10 / 1);
+            color: gray;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            left: 0px;
+            position: fixed;
+            right: 0px;
+            border-top: 3px solid #282828;
+            border-right: 0px solid white;
+            border-bottom: 0px solid white;
+            border-left: 0px solid white;
+        }
+
+    </style>
+</head>
     <body>
         <div class="header">
             <h1>WELCOME TO <font color="#ff0000">VECTORARTS</font> <font color="#0061ff">ENTERTAINMENT</font></h1>
@@ -122,13 +128,15 @@
             </div>
             <div class="gallery-item">
                 <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a target="_blank" href="https://www.youtube.com/@ThatJamGuy09/videos">
-                        <img class="gallery-item-image" src="images/gallery_youtube.png" alt="Videos by ThatJamGuy" width="502" height="335" />
+                    <a target="_blank" href="https://discord.gg/rarnCP68Dk">
+                        <img class="gallery-item-image" src="images/gallery_discord.png" alt="SCP:CBR Discord Server" width="502" height="335" />
                     </a>
                 </div>
-                <p class="gallery-item-text"><strong>WATCH VIDEOS</strong></p>
+                <p class="gallery-item-text"><strong>COME HANG OUT!</strong></p>
             </div>
         </div>
+
+        <div style="block-size: 100px"></div>
 
         <footer class="footer">
             <p>Copyright VectorArts Entertainment &copy; 2024 - 2026 | Page designed by ThatJamGuy</p>
