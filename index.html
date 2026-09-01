@@ -6,12 +6,46 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
     <meta charset="UTF-8">
     <style>
+        .construction {
+            background-color: rgb(255 255 0 / 1);
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-left-style: solid;
+            border-left-width: 3px;
+            border-right-style: solid;
+            border-right-width: 3px;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+            border-top-style: solid;
+            border-top-width: 3px;
+            left: 0px;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            padding: 5px;
+            z-index: 1000;
+        }
+
+        .construction-text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 0em;
+            margin-top: 0em;
+            text-align: center;
+            outline: 2px dashed rgb(0 0 0 / 0.57);
+            padding: 5px
+        }
+
         body {
             background-color: #131313;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         h1 {
+            color:white;
             font-size: 50px;
         }
 
@@ -52,6 +86,14 @@
             text-align: center;
         }
 
+        .other {
+            display: flex;
+            flex-direction: column;
+            margin-left: 180px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
         .footer {
             align-items: center;
             background-color: rgb(10 10 10 / 1);
@@ -70,76 +112,89 @@
 
     </style>
 </head>
-    <body>
-        <div class="header">
-            <h1>WELCOME TO <font color="#ff0000">VECTORARTS</font> <font color="#0061ff">ENTERTAINMENT</font></h1>
-            <p>
-                <strong>VectorArts Entertainment</strong> is the studio name for the hobbyist <strong>ThatJamGuy</strong>, known primarily for his contributions in the <strong>SCP Community</strong>. <br>
-                Despite this, ThatJamGuy does a lot of different things such as Game Development, Music Production, YouTube Content Creation, and general small projects. <br>
-                That out of the way, this is a site that I (With help from <strong>Bucksplitter</strong>) decided to create to house most if not all my projects for people to view.
-            </p>
+<body>
+    <div class="construction">
+        <p class="construction-text">
+            Hey, just a friendly reminder that this site is stull heavily under construction! Expect unfinished aspects or issues with various pages. Also it's made by two guys just learning HTML and CSS lmao.
+        </p>
+    </div>
 
-            <p>Feel free to click around and learn something cool about what I've been working on!</p>
+    <div class="header">
+        <h1>WELCOME TO <font color="#ff0000">VECTORARTS</font> <font color="#0061ff">ENTERTAINMENT</font></h1>
+        <p>
+            <strong>VectorArts Entertainment</strong> is the studio name for the hobbyist <strong>ThatJamGuy</strong>, known primarily for his contributions in the <strong>SCP Community</strong>. <br>
+            Despite this, ThatJamGuy does a lot of different things such as Game Development, Music Production, YouTube Content Creation, and general small projects. <br>
+            That out of the way, this is a site that I (With help from <strong>Bucksplitter</strong>) decided to create to house most if not all my projects for people to view.
+        </p>
+
+        <p>Feel free to click around and learn something cool about what I've been working on!</p>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <div style="max-height:335px; display:inline-block; overflow:hidden">
+                <a href="games.html">
+                    <img class="gallery-item-image" src="images/gallery_game.png" alt="Games by ThatJamGuy" width="502" height="335" />
+                </a>
+            </div>
+            <p class="gallery-item-text"><strong>BROWSE GAMES</strong></p>
         </div>
-
-        <div class="gallery">
-            <div class="gallery-item">
-                <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a href="games.html">
-                        <img class="gallery-item-image" src="images/gallery_game.png" alt="Games by ThatJamGuy" width="502" height="335" />
-                    </a>
-                </div>
-                <p class="gallery-item-text"><strong>BROWSE GAMES</strong></p>
+        <div class="gallery-item">
+            <div style="max-height:335px; display:inline-block; overflow:hidden">
+                <a target="_blank" href="music.html">
+                    <img class="gallery-item-image" src="images/gallery_music.png" alt="Music by ThatJamGuy" width="502" height="335" />
+                </a>
             </div>
-            <div class="gallery-item">
-                <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a target="_blank" href="music.html">
-                        <img class="gallery-item-image" src="images/gallery_music.png" alt="Music by ThatJamGuy" width="502" height="335" />
-                    </a>
-                </div>
-                <p class="gallery-item-text"><strong>LISTEN TO MUSIC</strong></p>
-            </div>
-            <div class="gallery-item">
-                <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a target="_blank" href="https://www.youtube.com/@ThatJamGuy09/videos">
-                        <img class="gallery-item-image" src="images/gallery_youtube.png" alt="Videos by ThatJamGuy" width="502" height="335" />
-                    </a>
-                </div>
-                <p class="gallery-item-text"><strong>WATCH VIDEOS</strong></p>
-            </div>
+            <p class="gallery-item-text"><strong>LISTEN TO MUSIC</strong></p>
         </div>
-
-        <div class="gallery">
-            <div class="gallery-item">
-                <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a href="games.html">
-                        <img class="gallery-item-image" src="images/gallery_game.png" alt="Games by ThatJamGuy" width="502" height="335" />
-                    </a>
-                </div>
-                <p class="gallery-item-text"><strong>OTHER PROJECTS</strong></p>
+        <div class="gallery-item">
+            <div style="max-height:335px; display:inline-block; overflow:hidden">
+                <a target="_blank" href="https://www.youtube.com/@ThatJamGuy09/videos">
+                    <img class="gallery-item-image" src="images/gallery_youtube.png" alt="Videos by ThatJamGuy" width="502" height="335" />
+                </a>
             </div>
-            <div class="gallery-item">
-                <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a target="_blank" href="community.html">
-                        <img class="gallery-item-image" src="images/gallery_community.png" alt="Music by ThatJamGuy" width="502" height="335" />
-                    </a>
-                </div>
-                <p class="gallery-item-text"><strong>VIEW COMMUNITY CONTENT</strong></p>
-            </div>
-            <div class="gallery-item">
-                <div style="max-height:335px; display:inline-block; overflow:hidden">
-                    <a target="_blank" href="https://discord.gg/rarnCP68Dk">
-                        <img class="gallery-item-image" src="images/gallery_discord.png" alt="SCP:CBR Discord Server" width="502" height="335" />
-                    </a>
-                </div>
-                <p class="gallery-item-text"><strong>COME HANG OUT!</strong></p>
-            </div>
+            <p class="gallery-item-text"><strong>WATCH VIDEOS</strong></p>
         </div>
+    </div>
 
-        <div style="block-size: 100px"></div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <div style="max-height:335px; display:inline-block; overflow:hidden">
+                <a href="games.html">
+                    <img class="gallery-item-image" src="images/gallery_game.png" alt="Games by ThatJamGuy" width="502" height="335" />
+                </a>
+            </div>
+            <p class="gallery-item-text"><strong>OTHER PROJECTS</strong></p>
+        </div>
+        <div class="gallery-item">
+            <div style="max-height:335px; display:inline-block; overflow:hidden">
+                <a target="_blank" href="community.html">
+                    <img class="gallery-item-image" src="images/gallery_community.png" alt="Music by ThatJamGuy" width="502" height="335" />
+                </a>
+            </div>
+            <p class="gallery-item-text"><strong>VIEW COMMUNITY CONTENT</strong></p>
+        </div>
+        <div class="gallery-item">
+            <div style="max-height:335px; display:inline-block; overflow:hidden">
+                <a target="_blank" href="https://discord.gg/rarnCP68Dk">
+                    <img class="gallery-item-image" src="images/gallery_discord.png" alt="SCP:CBR Discord Server" width="502" height="335" />
+                </a>
+            </div>
+            <p class="gallery-item-text"><strong>COME HANG OUT!</strong></p>
+        </div>
+    </div>
 
-        <footer class="footer">
-            <p>Copyright VectorArts Entertainment &copy; 2024 - 2026 | Page designed by ThatJamGuy</p>
-        </footer>
-    </body>
+    <div class="other">
+        <h1>What else is there?</h1>
+        <p style="color:white;">
+            Feel free to check out any of these other harder to categorize things also related to ThatJamGuy and VectorArts Entertainment.
+        </p>
+    </div>
+
+    <div style="block-size: 100px"></div>
+
+    <footer class="footer">
+        <p>Copyright VectorArts Entertainment &copy; 2024 - 2026 | Page designed by ThatJamGuy</p>
+    </footer>
+</body>
 </html>
