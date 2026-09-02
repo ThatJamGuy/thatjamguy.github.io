@@ -10,10 +10,12 @@ h1 {
 
 .logo-red {
     color: #ff0000;
+    text-shadow: 4px 4px black;
 }
 
 .logo-blue {
     color: #0061ff;
+    text-shadow: 4px 4px black;
 }
 
 .construction {

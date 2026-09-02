@@ -1,21 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <title>Lockdown</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="styles.css" />
         <style>
-            body {background-color:#131313;}
-
-
-
             a:link {
-                color:#ff0000;
+                color: #ff0000;
                 background-color: transparent;
                 text-decoration: none;
             }
 
             A:visited {
-                color:#0061ff;
+                color: #0061ff;
                 background-color: transparent;
                 text-decoration: none;
             }
@@ -24,20 +21,19 @@
                 color: purple;
                 background-color: transparent;
                 text-decoration: underline;
-
             }
 
             .h1 {
                 color: white;
                 text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 50px;
             }
 
             .p1 {
                 color: white;
                 text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 18px;
             }
 
@@ -50,9 +46,9 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
-                max-width:fit-content;
-                margin-left:auto;
-                margin-right:auto;
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .gallery-item {
@@ -69,26 +65,14 @@
             }
 
             .gallery-item-image:hover {
-                transform:scale(1.1);
+                transform: scale(1.1);
             }
 
             .gallery-item-text {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
                 color: white;
                 padding: 1px;
-                text-align:center;
-            }
-
-            .footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: #1c1c1c;
-             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-align: center;
-                color: gray;
-                z-index: 1000;
             }
 
             .button {
@@ -99,7 +83,6 @@
                 padding: 2px;
             }
             .button2 {
-
                 color: #ff0000;
                 background-color: black;
                 text-align: left;
@@ -126,12 +109,11 @@
             .Locktext {
                 color: #ff0000;
                 text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 50px;
             }
 
             .carousel {
-
                 overflow: hidden;
                 width: 100%;
                 max-width: 800px;
@@ -143,56 +125,103 @@
                 animation: slide 15s infinite;
             }
 
-            .slides img{
+            .slides img {
                 width: 100%;
                 flex-shrink: 0%;
             }
 
-            @keyframes slide{
-                0% {transform:translateX(0);}
-                33% {transform: translateX(0);}
-                34% {transform: translateX(-100%);}
-                66% {transform:translateX(-100%);}
-                67% { transform: translateX(-200%);}
-                100% { transform: translateX(-200%);}
-
+            @keyframes slide {
+                0% {
+                    transform: translateX(0);
+                }
+                33% {
+                    transform: translateX(0);
+                }
+                34% {
+                    transform: translateX(-100%);
+                }
+                66% {
+                    transform: translateX(-100%);
+                }
+                67% {
+                    transform: translateX(-200%);
+                }
+                100% {
+                    transform: translateX(-200%);
+                }
             }
-
         </style>
-        <head>
-            <body>
-                <button class="button"><a href="index.html">Home</a> </button>
-                <button class="button"><a href="games.html">Games</a> </button>
-                <div class="divspacer2"></div>
-                <image class="banner" src="images/banner_lockdown.png" alt="LockdownBanner"> </image>
-                <p class="p1"><b>Lockdown</b> is a game <b> ThatJamGuy</b> originally developed for <a target="_blank" href="https://itch.io/jam/scream-jam-2025/rate/3965133"><b> Scream Jam 2025</b> </a> that he later decided to make a full game. <br> Placeholder text</p>
-                <h1 class="Locktext"><b>STORY</b></h1>
-                <p class="p1">You are a maintenance employee working in the Sector 4 Industrial Zone, at least you were before administration put the sector on lockdown due to strange entities appearing down there. <br> Your coworkers might have left you behind to be stuck with these things, but you might still be able to get out.</p>
-                <div class="divspacer"> </div>
-            <div class="gallery">
-            <div class="gallery-item">
-                <a href="https://github.com/ThatJamGuy/thatjamguy.github.io/releases/download/DirectDownloads/Lockdown.zip">
-               <img class="gallery-item-image" src="images/game_lockdown.jpg" alt="game_lockdown.jpg" width="350" height="350"/>
-                </a>
-                <p class="gallery-item-text"><strong>DOWNLOAD LOCKDOWN</strong></p>
-            </div>
-            </div>
-
-                <div style="block-size: 50px;"> </div>
-
-                <div class="carousel">
-                    <div class="slides">
-                        <img src="LockdownSlides/weftM4.png" alt="Slide 1">
-                        <img src="LockdownSlides/NyTWD1.png" alt="Slide 2">
-                        <img src="LockdownSlides/z4xYL5.png" alt="Slide 3">
-
-                    </div>
-                </div>
-                <p class="p1">(real ingame screenshots)</p>
-                    <div style="block-size: 200px;"> </div>
-                <footer class="footer">
-                    <p>Copyright VectorArts Entertainment &copy; 2024 - 2026 | Page designed by Bucksplitter</p>
-                </footer>
-            </body>
     </head>
+
+    <body>
+        <button class="button"><a href="index.html">Home</a></button>
+        <button class="button"><a href="games.html">Games</a></button>
+        <div class="divspacer2"></div>
+        <image
+            class="banner"
+            src="images/banner_lockdown.png"
+            alt="Lockdown Banner"
+        >
+        </image>
+        <p class="p1">
+            <b>LOCKDOWN</b> is a short ~5 minute horror game created by
+            <b> ThatJamGuy</b> in October of 2025, originally developed for the
+            <a
+                target="_blank"
+                href="https://itch.io/jam/scream-jam-2025/rate/3965133"
+                ><b> Scream Jam 2025 </b>
+            </a>
+            game jam.<br />
+            The game was well recieved during the judgement period particularly
+            in the horror (#10 / 932) and sound design (#19 / 932) aspect.<br />
+            A full version has since been planned but progress is minimal with
+            <strong>SCP - Containment Breach Revival</strong> taking priority.
+        </p>
+        <h1 class="Locktext"><b>STORY</b></h1>
+        <p class="p1">
+            You are a maintenance employee working in the
+            <strong>Sector 4 Industrial</strong> Zone, at least you were before
+            administration put the sector on lockdown due to a variety of
+            oddities happening there.<br />
+            Your coworkers might have left you behind to be stuck with these
+            things, but you might still be able to get out.
+        </p>
+        <div class="divspacer"></div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a
+                    href="https://github.com/ThatJamGuy/thatjamguy.github.io/releases/download/DirectDownloads/Lockdown.zip"
+                >
+                    <img
+                        class="gallery-item-image"
+                        src="images/game_lockdown.jpg"
+                        alt="game_lockdown.jpg"
+                        width="350"
+                        height="350"
+                    />
+                </a>
+                <p class="gallery-item-text">
+                    <strong>DOWNLOAD LOCKDOWN</strong>
+                </p>
+            </div>
+        </div>
+
+        <div style="block-size: 50px"></div>
+
+        <div class="carousel">
+            <div class="slides">
+                <img src="LockdownSlides/weftM4.png" alt="Slide 1" />
+                <img src="LockdownSlides/NyTWD1.png" alt="Slide 2" />
+                <img src="LockdownSlides/z4xYL5.png" alt="Slide 3" />
+            </div>
+        </div>
+        <p class="p1">(real ingame screenshots)</p>
+        <div style="block-size: 200px"></div>
+        <footer class="footer">
+            <p>
+                Copyright VectorArts Entertainment &copy; 2024 - 2026 | Page
+                designed by Bucksplitter & ThatJamGuy
+            </p>
+        </footer>
+    </body>
 </html>
