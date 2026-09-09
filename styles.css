@@ -52,6 +52,12 @@ h1 {
     padding: 5px;
 }
 
+.gallery-item-frame {
+    max-height: 335px;
+    display: inline-block;
+    overflow: hidden;
+}
+
 .footer {
     align-items: center;
     background-color: rgb(10 10 10 / 1);
