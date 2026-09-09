@@ -2,50 +2,32 @@
 
 <html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="The home page for a bunch of my very cool stuff"
+        />
         <title>VectorArts Entertainment</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico?" />
         <link rel="stylesheet" href="styles.css" />
-        <meta charset="UTF-8" />
-        <style>
-            .header {
-                text-align: center;
-                color: white;
-            }
-
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                max-width: fit-content;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .gallery-item {
-                margin: 5px;
-                border: 1px solid gray;
-                display: inline-block;
-                overflow: hidden;
-                max-width: 502px;
-                max-height: 394px;
-            }
-
-            .gallery-item-image {
-                -webkit-transition-duration: 0.2s;
-            }
-
-            .gallery-item-image:hover {
-                transform: scale(1.1);
-            }
-
-            .gallery-item-text {
-                color: white;
-                padding: 1px;
-                text-align: center;
-            }
-        </style>
     </head>
     <body>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li>
+                    <a href="index.html" class="active" aria-current="page"
+                        >Home</a
+                    >
+                </li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li class="site-nav-right">
+                    <a href="#placeholder">Placeholder</a>
+                </li>
+            </ul>
+        </nav>
+
         <div class="construction">
             <p class="construction-text">
                 Hey, just a friendly reminder that this site is still heavily
@@ -55,7 +37,7 @@
             </p>
         </div>
 
-        <div class="header">
+        <header class="header">
             <h1>
                 WELCOME TO <span class="logo-red">VECTORARTS</span>
                 <span class="logo-blue">ENTERTAINMENT</span>
@@ -76,106 +58,133 @@
                 Feel free to click around and learn something cool about what
                 I've been working on!
             </p>
-        </div>
+        </header>
 
-        <div class="gallery">
-            <div class="gallery-item">
-                <div class="gallery-item-frame">
-                    <a href="games.html">
-                        <img
-                            class="gallery-item-image"
-                            src="images/gallery_game.png"
-                            alt="Games by ThatJamGuy"
-                            width="502"
-                            height="335"
-                        />
-                    </a>
+        <main>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="gallery-item-frame">
+                        <a href="games.html">
+                            <img
+                                class="gallery-item-image"
+                                src="images/gallery_game.png"
+                                alt="Games by ThatJamGuy"
+                                width="502"
+                                height="335"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <p class="gallery-item-text">
+                        <strong>BROWSE GAMES</strong>
+                    </p>
                 </div>
-                <p class="gallery-item-text"><strong>BROWSE GAMES</strong></p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item-frame">
-                    <a target="_blank" href="music.html">
-                        <img
-                            class="gallery-item-image"
-                            src="images/gallery_music.png"
-                            alt="Music by ThatJamGuy"
-                            width="502"
-                            height="335"
-                        />
-                    </a>
+                <div class="gallery-item">
+                    <div class="gallery-item-frame">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="music.html"
+                        >
+                            <img
+                                class="gallery-item-image"
+                                src="images/gallery_music.png"
+                                alt="Music by ThatJamGuy"
+                                width="502"
+                                height="335"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <p class="gallery-item-text">
+                        <strong>LISTEN TO MUSIC</strong>
+                    </p>
                 </div>
-                <p class="gallery-item-text">
-                    <strong>LISTEN TO MUSIC</strong>
-                </p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item-frame">
-                    <a
-                        target="_blank"
-                        href="https://www.youtube.com/@ThatJamGuy09/videos"
-                    >
-                        <img
-                            class="gallery-item-image"
-                            src="images/gallery_youtube.png"
-                            alt="Videos by ThatJamGuy"
-                            width="502"
-                            height="335"
-                        />
-                    </a>
+                <div class="gallery-item">
+                    <div class="gallery-item-frame">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.youtube.com/@ThatJamGuy09/videos"
+                        >
+                            <img
+                                class="gallery-item-image"
+                                src="images/gallery_youtube.png"
+                                alt="Videos by ThatJamGuy"
+                                width="502"
+                                height="335"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <p class="gallery-item-text">
+                        <strong>WATCH VIDEOS</strong>
+                    </p>
                 </div>
-                <p class="gallery-item-text"><strong>WATCH VIDEOS</strong></p>
             </div>
-        </div>
 
-        <div class="gallery">
-            <div class="gallery-item">
-                <div class="gallery-item-frame">
-                    <a href="other.html">
-                        <img
-                            class="gallery-item-image"
-                            src="images/gallery_game.png"
-                            alt="Other things"
-                            width="502"
-                            height="335"
-                        />
-                    </a>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="gallery-item-frame">
+                        <a href="other.html">
+                            <img
+                                class="gallery-item-image"
+                                src="images/gallery_game.png"
+                                alt="Other projects by ThatJamGuy"
+                                width="502"
+                                height="335"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <p class="gallery-item-text">
+                        <strong>OTHER PROJECTS</strong>
+                    </p>
                 </div>
-                <p class="gallery-item-text"><strong>OTHER PROJECTS</strong></p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item-frame">
-                    <a target="_blank" href="community.html">
-                        <img
-                            class="gallery-item-image"
-                            src="images/gallery_community.png"
-                            alt="What's the related community up to?"
-                            width="502"
-                            height="335"
-                        />
-                    </a>
+                <div class="gallery-item">
+                    <div class="gallery-item-frame">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="community.html"
+                        >
+                            <img
+                                class="gallery-item-image"
+                                src="images/gallery_community.png"
+                                alt="What's the related community up to?"
+                                width="502"
+                                height="335"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <p class="gallery-item-text">
+                        <strong>VIEW COMMUNITY CONTENT</strong>
+                    </p>
                 </div>
-                <p class="gallery-item-text">
-                    <strong>VIEW COMMUNITY CONTENT</strong>
-                </p>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item-frame">
-                    <a target="_blank" href="https://discord.gg/rarnCP68Dk">
-                        <img
-                            class="gallery-item-image"
-                            src="images/gallery_discord.png"
-                            alt="SCP:CBR Discord Server"
-                            width="502"
-                            height="335"
-                        />
-                    </a>
+                <div class="gallery-item">
+                    <div class="gallery-item-frame">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://discord.gg/rarnCP68Dk"
+                        >
+                            <img
+                                class="gallery-item-image"
+                                src="images/gallery_discord.png"
+                                alt="SCP:CBR Discord Server"
+                                width="502"
+                                height="335"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                    <p class="gallery-item-text">
+                        <strong>COME HANG OUT!</strong>
+                    </p>
                 </div>
-                <p class="gallery-item-text"><strong>COME HANG OUT!</strong></p>
             </div>
-        </div>
-
-        <div style="block-size: 100px"></div>
+        </main>
 
         <footer class="footer">
             <p>
