@@ -262,6 +262,13 @@ a:focus-visible {
     white-space: nowrap;
 }
 
+.game-status-group {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
 .status-released {
     background-color: rgb(47 174 86 / 0.12);
     border-color: #2fae56;
@@ -280,38 +287,141 @@ a:focus-visible {
     color: #888888;
 }
 
-.game-row[data-status="cancelled"] .game-title,
-.game-row[data-status="cancelled"] .game-desc {
+.game-row[data-status~="cancelled"] .game-title,
+.game-row[data-status~="cancelled"] .game-desc {
     color: #7a7a7a;
 }
 
-.game-row[data-status="cancelled"] {
+.game-row[data-status~="cancelled"] {
     border-left-color: #5a5a5a;
 }
 
-.status-rumored {
+.status-unclassified {
     background-color: rgb(178 59 255 / 0.1);
     border-color: #b23bff;
     border-style: dashed;
     color: #c774ff;
 }
 
-.game-row[data-status="released"] {
+.status-available {
+    background-color: rgb(rgb(0, 255, 14) / 0.1);
+    border-color: #00ff0e;
+    color: #00ff0e;
+}
+
+.game-row[data-status~="released"] {
     border-left-color: #2fae56;
 }
 
-.game-row[data-status="development"] {
+.game-row[data-status~="development"] {
     border-left-color: #0061ff;
 }
 
-.game-row[data-status="rumored"] {
+.game-row[data-status~="unclassified"] {
     border-left-color: #b23bff;
+}
+
+.game-row[data-status~="available"] {
+    border-left-color: #00ff0e;
 }
 
 .empty-state {
     color: #808080;
     text-align: center;
     padding: 40px 16px 60px;
+}
+
+.game-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto 8px;
+    max-width: 900px;
+    padding: 0 16px;
+}
+
+.game-filter-btn {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 999px;
+    color: #b8b8b8;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 16px;
+    transition:
+        border-color 0.15s ease,
+        color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.game-filter-btn:hover {
+    border-color: #4a4a4a;
+    color: #ffffff;
+}
+
+.game-filter-btn:focus-visible {
+    outline: 2px solid #0061ff;
+    outline-offset: 2px;
+}
+
+.game-filter-btn.is-active {
+    background-color: #0061ff;
+    border-color: #0061ff;
+    color: #ffffff;
+}
+
+.game-filter-count {
+    color: #6a6a6a;
+    font-size: 13px;
+    margin: 0 auto 20px;
+    max-width: 900px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.game-divider {
+    border-top: 1px solid #2a2a2a;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.game-row--linked {
+    cursor: pointer;
+    position: relative;
+    transition:
+        border-color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.game-row--linked:hover {
+    background-color: #1f1f1f;
+    border-left-color: #ffffff;
+}
+
+.game-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.game-title-link:hover,
+.game-title-link:focus-visible {
+    text-decoration: underline;
+}
+
+.game-link-indicator {
+    color: #6a9cff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.game-link-indicator:hover,
+.game-link-indicator:focus-visible {
+    text-decoration: underline;
 }
 
 .footer {
@@ -347,7 +457,8 @@ a:focus-visible {
         height: 140px;
     }
 
-    .game-status {
+    .game-status,
+    .game-status-group {
         justify-self: start;
     }
 }

@@ -11,6 +11,7 @@
         <title>Browse Games | VectorArts Entertainment</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico?" />
         <link rel="stylesheet" href="styles.css" />
+        <script src="games.js" defer></script>
     </head>
     <body>
         <nav class="site-nav" aria-label="Main">
@@ -50,16 +51,28 @@
                 and you're right as it took until about 4 years in for me to
                 start actually releasing stuff.
                 <br />
-                Browse Released, In-Development, Cancelled, and Unclassified
-                projects of mine and you might learn something interesting.
+                Browse Released, In-Development, Cancelled, and other projects
+                of mine using the filters below, and you might learn something
+                interesting.
             </p>
         </header>
 
         <main>
             <ul class="game-list">
-                <li class="game-row" data-status="development">
+                <li
+                    class="game-row"
+                    data-status="development available"
+                    data-link="games_scpcbr.html"
+                >
                     <div class="game-thumb">
-                        <img src="images/gallery_cbr.png" />
+                        <img
+                            src="images/gallery_cbr.png"
+                            alt="Thumbnail image for SCP - Containment Breach Revival"
+                            width="120"
+                            height="80"
+                            loading="eager"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -73,14 +86,26 @@
                             built on the Unity Game Engine.
                         </p>
                     </div>
-                    <div class="game-status status-development">
-                        IN-DEVELOPMENT
+                    <div class="game-status-group">
+                        <div class="game-status status-development">
+                            IN-DEVELOPMENT
+                        </div>
+                        <div class="game-status status-available">
+                            Download Available
+                        </div>
                     </div>
                 </li>
 
                 <li class="game-row" data-status="development">
                     <div class="game-thumb">
-                        <img src="images/gallery_game.png" />
+                        <img
+                            src="images/gallery_game.png"
+                            alt="Thumbnail image for LOCKDOWN"
+                            width="120"
+                            height="80"
+                            loading="eager"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -98,11 +123,22 @@
                     </div>
                 </li>
 
-                <hr />
+                <li
+                    class="game-divider"
+                    role="separator"
+                    aria-hidden="true"
+                ></li>
 
                 <li class="game-row" data-status="released">
                     <div class="game-thumb">
-                        <img src="images/gallery_game.png" />
+                        <img
+                            src="images/gallery_game.png"
+                            alt="Thumbnail image for LOCKDOWN 2025 Demo"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -119,9 +155,16 @@
                     <div class="game-status status-released">RELEASED</div>
                 </li>
 
-                <li class="game-row" data-status="rumored">
+                <li class="game-row" data-status="unclassified">
                     <div class="game-thumb">
-                        <img src="images/gallery_arctic.png" />
+                        <img
+                            src="images/gallery_arctic.png"
+                            alt="Thumbnail image for Unitled Arctic Horror Game"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -136,12 +179,21 @@
                             where I wanted to really go with it.
                         </p>
                     </div>
-                    <div class="game-status status-rumored">UNCLASSIFIED</div>
+                    <div class="game-status status-unclassified">
+                        UNCLASSIFIED
+                    </div>
                 </li>
 
-                <li class="game-row" data-status="rumored">
+                <li class="game-row" data-status="unclassified">
                     <div class="game-thumb">
-                        <img src="images/gallery_uno.png" />
+                        <img
+                            src="images/gallery_uno.png"
+                            alt="Thumbnail image for Death Uno"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -155,12 +207,21 @@
                             future.
                         </p>
                     </div>
-                    <div class="game-status status-rumored">UNCLASSIFIED</div>
+                    <div class="game-status status-unclassified">
+                        UNCLASSIFIED
+                    </div>
                 </li>
 
                 <li class="game-row" data-status="cancelled">
                     <div class="game-thumb">
-                        <img src="images/gallery_projunity.png" />
+                        <img
+                            src="images/gallery_projunity.png"
+                            alt="Thumbnail image for SCP: Project Unity"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -177,9 +238,16 @@
                     <div class="game-status status-cancelled">CANCELLED</div>
                 </li>
 
-                <li class="game-row" data-status="rumored">
+                <li class="game-row" data-status="unclassified">
                     <div class="game-thumb">
-                        <img src="images/gallery_planetfall.png" />
+                        <img
+                            src="images/gallery_planetfall.png"
+                            alt="Thumbnail image for PLANETFALL"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -193,12 +261,21 @@
                             creep.
                         </p>
                     </div>
-                    <div class="game-status status-rumored">UNCLASSIFIED</div>
+                    <div class="game-status status-unclassified">
+                        UNCLASSIFIED
+                    </div>
                 </li>
 
                 <li class="game-row" data-status="cancelled">
                     <div class="game-thumb">
-                        <img src="images/gallery_placeholder.png" />
+                        <img
+                            src="images/gallery_placeholder.png"
+                            alt="Thumbnail image for SCP: Containment Breach (HD REBORN)"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -217,9 +294,16 @@
                     <div class="game-status status-cancelled">CANCELLED</div>
                 </li>
 
-                <li class="game-row" data-status="rumored">
+                <li class="game-row" data-status="unclassified">
                     <div class="game-thumb">
-                        <img src="images/gallery_rp.png" />
+                        <img
+                            src="images/gallery_rp.png"
+                            alt="Thumbnail image for SCP: Roleplay"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -233,12 +317,21 @@
                             about the main menu.
                         </p>
                     </div>
-                    <div class="game-status status-rumored">UNCLASSIFIED</div>
+                    <div class="game-status status-unclassified">
+                        UNCLASSIFIED
+                    </div>
                 </li>
 
                 <li class="game-row" data-status="cancelled">
                     <div class="game-thumb">
-                        <img src="images/gallery_hdrem.png" />
+                        <img
+                            src="images/gallery_hdrem.png"
+                            alt="Thumbnail image for SCP: Containment Breach HD Remake"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -259,7 +352,14 @@
 
                 <li class="game-row" data-status="cancelled">
                     <div class="game-thumb">
-                        <img src="images/gallery_placeholder.png" />
+                        <img
+                            src="images/gallery_placeholder.png"
+                            alt="Thumbnail image for Unknown SCP:CB Remake"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -274,9 +374,16 @@
                     <div class="game-status status-cancelled">CANCELLED</div>
                 </li>
 
-                <li class="game-row" data-status="rumored">
+                <li class="game-row" data-status="unclassified">
                     <div class="game-thumb">
-                        <img src="images/gallery_placeholder.png" />
+                        <img
+                            src="images/gallery_placeholder.png"
+                            alt="Thumbnail image for Untitled SCP Game"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -289,12 +396,21 @@
                             environments and 3 short scripted sequences.
                         </p>
                     </div>
-                    <div class="game-status status-rumored">UNCLASSIFIED</div>
+                    <div class="game-status status-unclassified">
+                        UNCLASSIFIED
+                    </div>
                 </li>
 
                 <li class="game-row" data-status="released">
                     <div class="game-thumb">
-                        <img src="images/gallery_rbds.png" />
+                        <img
+                            src="images/gallery_rbds.png"
+                            alt="Thumbnail image for Robot Deathscape"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
@@ -312,7 +428,14 @@
 
                 <li class="game-row" data-status="released">
                     <div class="game-thumb">
-                        <img src="images/gallery_algr.png" />
+                        <img
+                            src="images/gallery_algr.png"
+                            alt="Thumbnail image for Alien Grasslands"
+                            width="120"
+                            height="80"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div class="game-info">
                         <div class="game-title">
