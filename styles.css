@@ -1,103 +1,57 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+:root {
+    --bg: #0e0e0e;
+    --panel: #131313;
+    --red: #ff0000;
+    --blue: #0061ff;
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: 'Courier New', Courier, monospace;
 }
 
 body {
-    background-color: #131313;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background: var(--bg);
+    color: #fff;
+    font-family: var(--font-body);
+    line-height: 1.1;
 }
 
 h1 {
-    color: white;
-    font-size: 50px;
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 5vw, 2.8rem);
 }
 
-.logo-red {
-    color: #ff0000;
-    text-shadow: 4px 4px black;
+h2 {
+    font-family: var(--font-heading);
 }
 
-.logo-blue {
-    color: #0061ff;
-    text-shadow: 4px 4px black;
-}
-
-.header {
+.mainbox {
+    box-sizing: border-box;
+    width: min(100% - 2rem, 1100px);
+    margin: 75px auto 0;
+    margin-bottom: 75px;
+    padding: 1rem;
+    background: var(--panel);
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    color: white;
-    padding: 0 16px;
 }
 
-.header p {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
+.mainbox p {
+    margin-inline: auto;
 }
 
-.gallery {
+.gamelist {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
 }
 
-.gallery-item {
-    margin: 5px;
-    border: 1px solid gray;
-    display: inline-block;
-    overflow: hidden;
-    max-width: 502px;
-    max-height: 394px;
-    flex: 1 1 320px;
-}
-
-.gallery-item-frame {
-    max-height: 335px;
-    display: inline-block;
-    overflow: hidden;
-    width: 100%;
-}
-
-.gallery-item-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.2s ease-in-out;
-}
-
-.gallery-item-image:hover,
-.gallery-item-image:focus-visible {
-    transform: scale(1.1);
-}
-
-.gallery-item-text {
-    color: white;
-    padding: 6px 1px;
-    text-align: center;
-}
-
-a:focus-visible {
-    outline: 2px solid #0061ff;
-    outline-offset: 2px;
-}
-
-.footer {
-    align-items: center;
-    background-color: rgb(10 10 10 / 1);
-    color: gray;
+.gamelist-item {
     display: flex;
-    justify-content: center;
-    padding: 10px 8px;
-    text-align: center;
-    border-top: 3px solid #282828;
-    flex-shrink: 0;
+    flex-direction: row;
+    align-self: center;
+    background-color: white;
+    min-height: 100px;
+    max-height: 100px;
 }
+
+.logo-red  { color: var(--red);  text-shadow: 0 0 12px rgba(255, 0, 0, 0.5); }
+.logo-blue { color: var(--blue); text-shadow: 0 0 12px rgba(0, 0, 0, 0.5); }
