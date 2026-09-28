@@ -24,11 +24,19 @@ h2 {
     font-family: var(--font-heading);
 }
 
+a:link {
+    color: #9e9eff;
+}
+
+a:visited {
+    color: #d0adf0;
+}
+
 .mainbox {
     box-sizing: border-box;
     width: min(100% - 2rem, 1100px);
-    margin: 75px auto 0;
-    margin-bottom: 75px;
+    margin: 50px auto 0;
+    margin-bottom: 50px;
     padding: 1rem;
     background: var(--panel);
     box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
