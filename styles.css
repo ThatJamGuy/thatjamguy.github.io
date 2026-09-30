@@ -39,6 +39,20 @@ h2 {
     margin-inline: auto;
 }
 
+.mainbox iframe {
+    display: block;
+    width: min(90%, 900px);
+    height: 190px;
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 0;
+}
+
+.mainbox iframe[src*="youtube.com/embed/"] {
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
 .gamelist {
     display: flex;
     flex-direction: column;
