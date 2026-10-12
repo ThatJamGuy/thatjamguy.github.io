@@ -4,7 +4,7 @@
     --red: #ff0000;
     --blue: #0061ff;
     --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-body: 'Courier New', Courier, monospace;
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
