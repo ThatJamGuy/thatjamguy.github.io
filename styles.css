@@ -47,6 +47,17 @@ a:visited {
     margin-inline: auto;
 }
 
+.button-link {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    background: #efefef;
+    color: #000 !important;
+    font: 13.3333px Arial, sans-serif;
+    text-decoration: none;
+}
+
 .mainbox iframe {
     display: block;
     width: min(90%, 900px);
