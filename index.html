@@ -94,21 +94,22 @@
         <hr>
 
         <h2><span class="logo-red">COMMUNITY</span> <span class="logo-blue">CONTENT</span></h2>
-        <p><i>People that went above and beyond and uploaded their experiences to YouTube!</i></p>
+        <p><i>People that went above and beyond and uploaded their Let's Plays of my games to YouTube!</i></p>
 
         <section class="video-carousel" aria-label="Community videos">
             <div class="video-carousel-player">
                 <button class="video-carousel-arrow" id="previous-video" type="button"
-                    aria-label="Previous video">🡄</button>
+                    aria-label="Previous video"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#ffffff" width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"/></svg></button>
                 <iframe id="community-video-player" title="Community video" loading="lazy"
                     src="https://www.youtube-nocookie.com/embed/NR9bsYe1Aiw?rel=0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <button class="video-carousel-arrow" id="next-video" type="button" aria-label="Next video">🡆</button>
+                <button class="video-carousel-arrow" id="next-video" type="button" aria-label="Next video"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#ffffff" width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"/></svg></button>
             </div>
             <div class="video-carousel-list" id="community-video-list" role="group"
                 aria-label="Choose a community video"></div>
-            <p class="video-carousel-status" id="video-carousel-status" aria-live="polite"></p>
         </section>
 
         <hr>
@@ -116,23 +117,23 @@
         <h2><span class="logo-red">OTHER</span> <span class="logo-blue">STUFF</span></h2>
         <p><i>Some other random stuff that isn't classified very well into any other categories.</i></p>
 
-        <p><a href="https://discord.gg/rarnCP68Dk">Join the discord (External Site)</a></p>
-        <p><a href="https://www.youtube.com/@ThatJamGuyy">Watch some cool videos (External Site)</a></p>
-        <p><a href="https://github.com/ThatJamGuy">Keep up on GitHub (External Site)</a></p>
-        <p><a href="https://thatjamguy.bandcamp.com/album/vector-beats">Listen / Download / Buy my album on BandCamp
+        <p><a href="https://discord.gg/rarnCP68Dk" target="_blank">Join the discord (External Site)</a></p>
+        <p><a href="https://www.youtube.com/@ThatJamGuyy" target="_blank">Watch some cool videos (External Site)</a></p>
+        <p><a href="https://github.com/ThatJamGuy" target="_blank">Keep up on GitHub (External Site)</a></p>
+        <p><a href="https://thatjamguy.bandcamp.com/album/vector-beats" target="_blank">Listen / Download / Buy my album on BandCamp
                 (External Site)</a></p>
+        <P><a href="https://sketchfab.com/ThatJamGuy" target="_blank">Check out my SketchFab stuff (External Site)</a></P>
     </main>
     <script>
         const communityVideos = [
-            { id: "0Q21uOnegGM", title: "The 0.0.5 Experience! | SCP: CB Revival" },
-            { id: "NR9bsYe1Aiw", title: "THIS BUILDING IS IN LOCKDOWN AND IT’S JUST ME AND THE ENTITIES" },
-            { id: "bkPnFYAYvBQ", title: "Lockdown demo - it's so fast" },
-            { id: "7fWWLQmcZ0Q", title: "SCP: Containment Breach Revival v0.2.2 [In Development]" },
-            { id: "Vj6I-sxnoAQ", title: "Пощупал SCPCB Revival" },
-            { id: "qYr4sz_86tM", title: "my friends developing game" }
+            { id: "0Q21uOnegGM" },
+            { id: "NR9bsYe1Aiw" },
+            { id: "bkPnFYAYvBQ" },
+            { id: "7fWWLQmcZ0Q" },
+            { id: "Vj6I-sxnoAQ" },
+            { id: "qYr4sz_86tM" }
         ];
         const videoPlayer = document.getElementById("community-video-player");
-        const videoStatus = document.getElementById("video-carousel-status");
         const videoList = document.getElementById("community-video-list");
         let activeVideoIndex = 0;
 
@@ -140,8 +141,6 @@
             activeVideoIndex = (index + communityVideos.length) % communityVideos.length;
             const video = communityVideos[activeVideoIndex];
             videoPlayer.src = `https://www.youtube-nocookie.com/embed/${video.id}?rel=0`;
-            videoPlayer.title = `Community video: ${video.title}`;
-            videoStatus.textContent = video.title;
 
             for (const [buttonIndex, button] of [...videoList.children].entries()) {
                 button.setAttribute("aria-pressed", String(buttonIndex === activeVideoIndex));
