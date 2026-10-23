@@ -32,7 +32,20 @@ a:visited {
     color: #d0adf0;
 }
 
+.background {
+    position: fixed;
+    z-index: 0;
+    inset: -12px;
+    background-image: url("images/gallery_planetfall.png");
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px);
+    pointer-events: none;
+}
+
 .mainbox {
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
     width: min(100% - 2rem, 1100px);
     margin: 50px auto 0;
