@@ -26,11 +26,6 @@
         <p><i>A quick list of my games that you can play right now! Dedicated pages for each game may come in the
                 future.</i></p>
 
-        <iframe
-            src="https://store.steampowered.com/widget/5256880/?t=The%20v0.0.5%20demo%20for%20SCP%20-%20Containment%20Breach%20Revival.%20This%20build%20was%20originally%20published%20to%20Itch.io%20in%20December%20of%202025%20but%20has%20been%20added%20to%20Steam%20as%20a%20teaser%20for%20the%20general%20idea%20SCP%3ACBR%20hopes%20to%20follow."
-            frameborder="0" width="646" height="190"></iframe>
-
-
         <iframe title="SCP - Containment Breach Revival on itch.io" loading="lazy"
             src="https://itch.io/embed/3181524?bg_color=000000&amp;fg_color=ffffff&amp;link_color=5a82fa&amp;border_color=333333"><a
                 href="https://thatjamguy.itch.io/scpcbr">SCP - Containment Breach Revival by
@@ -54,16 +49,6 @@
                 style="color: #cccccc; text-decoration: none;">ThatJamGuy</a> · <a
                 href="https://soundcloud.com/thatjamguy/acceptable-losses" title="Acceptable Losses" target="_blank"
                 rel="noopener noreferrer" style="color: #cccccc; text-decoration: none;">Acceptable Losses</a>
-        </div>
-        <iframe title="Repentance by ThatJamGuy on SoundCloud" loading="lazy" scrolling="no"
-            allow="autoplay; encrypted-media"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2318274665&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        <div
-            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-            <a href="https://soundcloud.com/thatjamguy" title="ThatJamGuy" target="_blank" rel="noopener noreferrer"
-                style="color: #cccccc; text-decoration: none;">ThatJamGuy</a> · <a
-                href="https://soundcloud.com/thatjamguy/repentance" title="Repentance" target="_blank"
-                rel="noopener noreferrer" style="color: #cccccc; text-decoration: none;">Repentance</a>
         </div>
         <iframe title="Uncertainty by ThatJamGuy on SoundCloud" loading="lazy" scrolling="no"
             allow="autoplay; encrypted-media"
@@ -96,8 +81,6 @@
                 href="https://soundcloud.com/thatjamguy/catalyst" title="Catalyst" target="_blank"
                 rel="noopener noreferrer" style="color: #cccccc; text-decoration: none;">Catalyst</a>
         </div>
-
-        <p><a class="button-link" href="placeholder.html">Click here for the comprehensive list -&gt;</a></p>
 
         <hr>
 
@@ -150,13 +133,15 @@
     </main>
     <script>
         const communityVideos = [
-            { id: "0Q21uOnegGM", title: "Community video 1" },
-            { id: "NR9bsYe1Aiw", title: "Community video 2" },
-            { id: "f5-Od1ybm7M", title: "Community video 3" },
-            { id: "bkPnFYAYvBQ", title: "Community video 4" },
-            { id: "7fWWLQmcZ0Q", title: "Community video 5" },
-            { id: "Vj6I-sxnoAQ", title: "Community video 6" },
-            { id: "qYr4sz_86tM", title: "Community video 7" }
+            { id: "YRkeDxseU34"},
+            { id: "bEtn6FahfTc"},
+            { id: "0Q21uOnegGM"},
+            { id: "NR9bsYe1Aiw"},
+            { id: "f5-Od1ybm7M"},
+            { id: "bkPnFYAYvBQ"},
+            { id: "7fWWLQmcZ0Q"},
+            { id: "Vj6I-sxnoAQ"},
+            { id: "qYr4sz_86tM"}
         ];
         const videoPlayer = document.getElementById("community-video-player");
         const videoList = document.getElementById("community-video-list");
@@ -166,7 +151,6 @@
             activeVideoIndex = (index + communityVideos.length) % communityVideos.length;
             const video = communityVideos[activeVideoIndex];
             videoPlayer.src = `https://www.youtube-nocookie.com/embed/${video.id}?rel=0`;
-            videoPlayer.title = video.title;
 
             for (const [buttonIndex, button] of [...videoList.children].entries()) {
                 button.setAttribute("aria-pressed", String(buttonIndex === activeVideoIndex));
@@ -177,7 +161,6 @@
             const button = document.createElement("button");
             button.className = "video-carousel-choice";
             button.type = "button";
-            button.setAttribute("aria-label", `Show ${video.title}`);
             button.addEventListener("click", () => showVideo(index));
             videoList.append(button);
         });
